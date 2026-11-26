@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="aYB7_MLlHu90gCe8pJL9">
+    <mxGraphModel dx="1414" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="77S2aRKHDToNHitNfxzV-6" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fillColor=none;" value="alt" vertex="1">
+          <mxGeometry height="346" width="930" x="10" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-5" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-1" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="77S2aRKHDToNHitNfxzV-2" value="Отправить описание сделки">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330.0000000000002" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-29" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-1" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="77S2aRKHDToNHitNfxzV-2" value="Команда / export">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="589.9999999999998" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;size=70;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;labelPerimeter=1;" value="Пользователь" vertex="1">
+          <mxGeometry height="630" width="40" x="70" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-12" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;flowAnimation=1;dashed=1;dashPattern=12 12;" target="77S2aRKHDToNHitNfxzV-1" value="Сообщение об отказе в доступе">
+          <mxGeometry relative="1" x="0.031" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="225" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-17" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="77S2aRKHDToNHitNfxzV-3" value="POST /v1/chat/completions&lt;div&gt;&amp;nbsp;(промпт 115-ФЗ, 860-П + сделка)&lt;/div&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-22" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="77S2aRKHDToNHitNfxzV-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="604.5" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-23" connectable="0" parent="77S2aRKHDToNHitNfxzV-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="INSERT INTO aml_logs (...)" vertex="1">
+          <mxGeometry relative="1" x="-0.1327" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-26" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="77S2aRKHDToNHitNfxzV-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-27" connectable="0" parent="77S2aRKHDToNHitNfxzV-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Вердикт (Green / Yellow / Red)&amp;nbsp;&lt;div&gt;и рекомендации&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3036" y="1" as="geometry">
+            <mxPoint x="34" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-30" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="77S2aRKHDToNHitNfxzV-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-31" connectable="0" parent="77S2aRKHDToNHitNfxzV-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="SELECT ... WHERE risk_level=&#39;Red&#39; (за 7 дней)" vertex="1">
+          <mxGeometry relative="1" x="-0.202" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-34" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-2" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="77S2aRKHDToNHitNfxzV-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-35" connectable="0" parent="77S2aRKHDToNHitNfxzV-34" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Файл report.csv" vertex="1">
+          <mxGeometry relative="1" x="0.3222" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="Telegram-бот (Aiogram 3.x)" vertex="1">
+          <mxGeometry height="630" width="80" x="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-20" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-3" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="77S2aRKHDToNHitNfxzV-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="484.5" y="414" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-21" connectable="0" parent="77S2aRKHDToNHitNfxzV-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="200 OK (JSON: risk_level,&lt;div&gt;&amp;nbsp;triggers, analysis, docs)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1867" y="4" as="geometry">
+            <mxPoint x="-7" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="LLM API&amp;nbsp;&lt;div&gt;(Gemini 3.1 Pro)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="630" width="100" x="560" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-24" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-4" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="77S2aRKHDToNHitNfxzV-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-25" connectable="0" parent="77S2aRKHDToNHitNfxzV-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="OK (запись сохранена)" vertex="1">
+          <mxGeometry relative="1" x="0.1088" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-32" edge="1" parent="1" source="77S2aRKHDToNHitNfxzV-4" style="edgeStyle=sequenceEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;libavoidRouting=0;curved=0;defaultLabelBackgroundColor=page;labelPadding=0 4;dashed=1;dashPattern=8 8;" target="77S2aRKHDToNHitNfxzV-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-33" connectable="0" parent="77S2aRKHDToNHitNfxzV-32" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="Список высокорисковых операций" vertex="1">
+          <mxGeometry relative="1" x="0.1612" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;sequenceEdgeStyle&quot;,&quot;libavoidRouting&quot;:0,&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="БД SQLite" vertex="1">
+          <mxGeometry height="630" width="100" x="800" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[Доступ запрещён]" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-14" parent="1" style="line;strokeWidth=2;html=1;dashed=1;" value="" vertex="1">
+          <mxGeometry height="10" width="930" x="10" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[Доступ разрешён: Админ/Гость]" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-28" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" value="opt" vertex="1">
+          <mxGeometry height="130" width="930" x="10" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="77S2aRKHDToNHitNfxzV-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[Вызов команды /export]" vertex="1">
+          <mxGeometry height="30" width="60" x="10" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
